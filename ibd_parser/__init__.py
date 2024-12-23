@@ -1,6 +1,6 @@
 """InnoDB IBD File Parser."""
 
-__version__ = "0.1.2"
+__version__ = "0.1.3"
 
 from .parser import IBDFileParser
 
