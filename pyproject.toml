@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ibd-parser"
+version = "0.1.0"
+authors = [
+  { name="likeyiyy", email="likeyiyying@gmail.com" },
+]
+description = "A Python tool for parsing and analyzing InnoDB .ibd files"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+ibd-parser = "ibd_parser.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/likeyiyy/ibd-parser"
+"Bug Tracker" = "https://github.com/likeyiyy/ibd-parser/issues"
