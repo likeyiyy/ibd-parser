@@ -1,4 +1,5 @@
 import os
+import struct
 from typing import List, Dict, Any
 from .constants import PAGE_SIZE, PageType
 from .page import PageHeader, IndexHeader
