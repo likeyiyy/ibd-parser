@@ -140,3 +140,35 @@ I will continue to enhance this project to make it more practical and valuable. 
 - Better documentation and examples
 
 Contributions and suggestions are welcome!
+
+## Testing and Development
+
+### Creating Test Data
+
+The project includes a script to create a test database with various column types:
+
+```bash
+# Install MySQL Connector
+pip install mysql-connector-python
+
+# Set MySQL connection environment variables (if needed)
+export MYSQL_USER=your_user
+export MYSQL_PASSWORD=your_password
+export MYSQL_HOST=localhost
+export MYSQL_PORT=3306  # Or your Docker mapped port
+
+# Create test database and table
+python examples/create_test_data.py
+```
+
+The test table includes common MySQL data types:
+- Integer types (TINYINT, SMALLINT, INT, BIGINT)
+- Floating point types (FLOAT, DOUBLE, DECIMAL)
+- String types (CHAR, VARCHAR, TEXT)
+- Date and Time types (DATE, TIME, DATETIME, TIMESTAMP)
+- Other types (BOOLEAN, ENUM, BINARY, BLOB)
+
+After creating the test database, you can find the .ibd file at:
+```
+/data/docker/mysql/data/ibd_parser_test/test_table.ibd
+```
