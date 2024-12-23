@@ -1,6 +1,6 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "ibd-parser"
@@ -11,10 +11,20 @@ authors = [
 description = "A Python tool for parsing and analyzing InnoDB .ibd files"
 readme = "README.md"
 requires-python = ">=3.7"
+license = {text = "MIT"}
+keywords = ["mysql", "innodb", "ibd", "parser", "database"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 
 [project.scripts]
@@ -23,3 +33,9 @@ ibd-parser = "ibd_parser.cli:main"
 [project.urls]
 "Homepage" = "https://github.com/likeyiyy/ibd-parser"
 "Bug Tracker" = "https://github.com/likeyiyy/ibd-parser/issues"
+"Documentation" = "https://github.com/likeyiyy/ibd-parser#README.md"
+"Source Code" = "https://github.com/likeyiyy/ibd-parser"
+
+[tool.setuptools]
+packages = ["ibd_parser"]
+package-dir = {"" = "."}
