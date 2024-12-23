@@ -128,3 +128,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - [InnoDB Page Structure](https://dev.mysql.com/doc/refman/8.0/en/innodb-page-structure.html)
 - [InnoDB File Space Management](https://dev.mysql.com/doc/refman/8.0/en/innodb-file-space.html)
+
+## Future Plans
+
+I will continue to enhance this project to make it more practical and valuable. Planned improvements include:
+
+- Support for more page types
+- Enhanced record analysis
+- Data recovery features
+- More comprehensive CLI tools
+- Better documentation and examples
+
+Contributions and suggestions are welcome!
